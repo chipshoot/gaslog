@@ -1,0 +1,6 @@
+F:\Projects\GasLog\NoteRepository\Utility\CommonUtility\NoteRepository.Common.Utility\bin\Debug\NoteRepository.Common.Utility.dll
+F:\Projects\GasLog\NoteRepository\Utility\CommonUtility\NoteRepository.Common.Utility\bin\Debug\NoteRepository.Common.Utility.pdb
+F:\Projects\GasLog\NoteRepository\Utility\CommonUtility\NoteRepository.Common.Utility\bin\Debug\log4net.xml
+F:\Projects\GasLog\NoteRepository\Utility\CommonUtility\NoteRepository.Common.Utility\obj\Debug\NoteRepository.Common.Utility.csprojResolveAssemblyReference.cache
+F:\Projects\GasLog\NoteRepository\Utility\CommonUtility\NoteRepository.Common.Utility\obj\Debug\NoteRepository.Common.Utility.dll
+F:\Projects\GasLog\NoteRepository\Utility\CommonUtility\NoteRepository.Common.Utility\obj\Debug\NoteRepository.Common.Utility.pdb

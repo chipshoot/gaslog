@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{195734FC-0ED0-463E-975C-6710AD5EAE01}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NoteRepository.Common.Utility</RootNamespace>
+    <AssemblyName>NoteRepository.Common.Utility</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.C1Zip, Version=1.1.20053.35, Culture=neutral, PublicKeyToken=bc8d9c59cf1b601f">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\C1.C1Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Core\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dal\AbstractEntity.cs" />
+    <Compile Include="Dal\ActionableCollection.cs" />
+    <Compile Include="Dal\Entity.cs" />
+    <Compile Include="Dal\Exceptions\RepositoryException.cs" />
+    <Compile Include="Dal\GuidIdEntity.cs" />
+    <Compile Include="Dal\IGenericTransaction.cs" />
+    <Compile Include="Dal\IGuidRepository.cs" />
+    <Compile Include="Dal\IMultiSessionUnitOfWork.cs" />
+    <Compile Include="Dal\IMultiSourceLookupRepository.cs" />
+    <Compile Include="Dal\IStringIdRepository.cs" />
+    <Compile Include="Dal\Pagination\IConverter.cs" />
+    <Compile Include="Dal\Pagination\IPagedCollection.cs" />
+    <Compile Include="Dal\Pagination\PagedCollection.cs" />
+    <Compile Include="Dal\Pagination\PagedCollectionBase.cs" />
+    <Compile Include="Dal\Pagination\PagedCollectionExtensions.cs" />
+    <Compile Include="Dal\Pagination\PagedCollectionMetaData.cs" />
+    <Compile Include="Dal\Pagination\StaticPagedCollection.cs" />
+    <Compile Include="Dal\Queries\Extensions.cs" />
+    <Compile Include="Dal\Queries\IQueryConstraints.cs" />
+    <Compile Include="Dal\Queries\PredicateBuilder.cs" />
+    <Compile Include="Dal\Queries\QueryConstraints.cs" />
+    <Compile Include="Dal\StringIdEntity.cs" />
+    <Compile Include="Dal\Exceptions\UnitOfWorkException.cs" />
+    <Compile Include="Dal\IDataChangePublish.cs" />
+    <Compile Include="Dal\IGenericEntity.cs" />
+    <Compile Include="Dal\IGenericRepository.cs" />
+    <Compile Include="Dal\ILookupRepository.cs" />
+    <Compile Include="Dal\IRepository.cs" />
+    <Compile Include="Dal\IUnitOfWork.cs" />
+    <Compile Include="Dal\IUnitOfWorkFactory.cs" />
+    <Compile Include="Dal\VersionedEntity.cs" />
+    <Compile Include="LogService\BaseLogger.cs" />
+    <Compile Include="LogService\DefaultLogger.cs" />
+    <Compile Include="LogService\ILogService.cs" />
+    <Compile Include="MeasureUnit\Dimension.cs" />
+    <Compile Include="MeasureUnit\DimensionUnit.cs" />
+    <Compile Include="MeasureUnit\DimensionUnitFormatType.cs" />
+    <Compile Include="MeasureUnit\Weight.cs" />
+    <Compile Include="MeasureUnit\WeightUnit.cs" />
+    <Compile Include="Misc\SqlReaderHelperExtensions.cs" />
+    <Compile Include="Misc\DateTimeAdapter.cs" />
+    <Compile Include="Misc\Holiday.cs" />
+    <Compile Include="Misc\IDateTimeAdapter.cs" />
+    <Compile Include="Misc\IHolidayProvider.cs" />
+    <Compile Include="Misc\ProgressInfo.cs" />
+    <Compile Include="Misc\StringByteArrayConvert.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Specification\AndSpecification.cs" />
+    <Compile Include="Specification\ISpecification.cs" />
+    <Compile Include="Specification\NotSpecification.cs" />
+    <Compile Include="Specification\OrSpecification.cs" />
+    <Compile Include="Specification\Specification.cs" />
+    <Compile Include="Specification\SpecificationException.cs" />
+    <Compile Include="Specification\SpecificationExtensionMethods.cs" />
+    <Compile Include="StringEnumeration\StringEnum.cs" />
+    <Compile Include="StringEnumeration\StringEnumerationExtensions.cs" />
+    <Compile Include="StringEnumeration\StringValueAttribute.cs" />
+    <Compile Include="Validation\Email\DnsQueryOptions.cs" />
+    <Compile Include="Validation\Email\DnsQueryTypes.cs" />
+    <Compile Include="Validation\Email\EmailValidation.cs" />
+    <Compile Include="Validation\Email\MXRecord.cs" />
+    <Compile Include="Validation\Guard.cs" />
+    <Compile Include="Validation\IValidator.cs" />
+    <Compile Include="Validation\ValidatorBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

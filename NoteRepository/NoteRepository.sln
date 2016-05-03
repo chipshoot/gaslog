@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utility", "Utility", "{D2FCB813-8BD3-4C7A-B4A9-C24158E0E6C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteRepository.Common.Utility", "Utility\CommonUtility\NoteRepository.Common.Utility\NoteRepository.Common.Utility.csproj", "{195734FC-0ED0-463E-975C-6710AD5EAE01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{195734FC-0ED0-463E-975C-6710AD5EAE01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{195734FC-0ED0-463E-975C-6710AD5EAE01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{195734FC-0ED0-463E-975C-6710AD5EAE01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{195734FC-0ED0-463E-975C-6710AD5EAE01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{195734FC-0ED0-463E-975C-6710AD5EAE01} = {D2FCB813-8BD3-4C7A-B4A9-C24158E0E6C7}
+	EndGlobalSection
+EndGlobal

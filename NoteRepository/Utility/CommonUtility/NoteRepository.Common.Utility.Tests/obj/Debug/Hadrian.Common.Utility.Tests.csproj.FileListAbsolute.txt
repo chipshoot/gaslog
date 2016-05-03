@@ -1,0 +1,12 @@
+D:\Projects\HPC4\Utility\CommonUtility\Hadrian.Common.Utility.Tests\obj\Debug\Hadrian.Common.Utility.Tests.csprojResolveAssemblyReference.cache
+D:\Projects\HPC4\Utility\CommonUtility\Hadrian.Common.Utility.Tests\bin\Debug\Hadrian.Common.Utility.Tests.dll
+D:\Projects\HPC4\Utility\CommonUtility\Hadrian.Common.Utility.Tests\bin\Debug\Hadrian.Common.Utility.Tests.pdb
+D:\Projects\HPC4\Utility\CommonUtility\Hadrian.Common.Utility.Tests\bin\Debug\Hadrian.Common.Utility.dll
+D:\Projects\HPC4\Utility\CommonUtility\Hadrian.Common.Utility.Tests\bin\Debug\nunit.framework.dll
+D:\Projects\HPC4\Utility\CommonUtility\Hadrian.Common.Utility.Tests\bin\Debug\log4net.dll
+D:\Projects\HPC4\Utility\CommonUtility\Hadrian.Common.Utility.Tests\bin\Debug\Hadrian.Common.Utility.pdb
+D:\Projects\HPC4\Utility\CommonUtility\Hadrian.Common.Utility.Tests\bin\Debug\nunit.framework.xml
+D:\Projects\HPC4\Utility\CommonUtility\Hadrian.Common.Utility.Tests\bin\Debug\log4net.xml
+D:\Projects\HPC4\Utility\CommonUtility\Hadrian.Common.Utility.Tests\obj\Debug\Hadrian.Common.Utility.Tests.dll
+D:\Projects\HPC4\Utility\CommonUtility\Hadrian.Common.Utility.Tests\obj\Debug\Hadrian.Common.Utility.Tests.pdb
+D:\Projects\HPC4\Utility\CommonUtility\Hadrian.Common.Utility.Tests\bin\Debug\C1.C1Zip.dll
