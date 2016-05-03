@@ -1,7 +1,7 @@
-﻿using Hadrian.Common.Utility.StringEnumeration;
+﻿using NoteRepository.Common.Utility.StringEnumeration;
 using NUnit.Framework;
 
-namespace Hadrian.Common.Utility.Tests.StringEnumTests
+namespace NoteRepository.Common.Utility.Tests.StringEnumTests
 {
     public enum TestEnumType
     {

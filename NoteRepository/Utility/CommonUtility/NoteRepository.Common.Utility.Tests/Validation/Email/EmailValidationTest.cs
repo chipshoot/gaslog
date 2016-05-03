@@ -1,7 +1,7 @@
-﻿using Hadrian.Common.Utility.Validation.Email;
+﻿using NoteRepository.Common.Utility.Validation.Email;
 using NUnit.Framework;
 
-namespace Hadrian.Common.Utility.Tests.Validation.Email
+namespace NoteRepository.Common.Utility.Tests.Validation.Email
 {
     [TestFixture]
     public class EmailValidationTest

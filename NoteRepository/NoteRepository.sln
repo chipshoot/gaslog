@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utility", "Utility", "{D2FCB813-8BD3-4C7A-B4A9-C24158E0E6C7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utility", "Utility", "{3BD1469B-C151-43A3-9132-1712267AF1DC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteRepository.Common.Utility", "Utility\CommonUtility\NoteRepository.Common.Utility\NoteRepository.Common.Utility.csproj", "{195734FC-0ED0-463E-975C-6710AD5EAE01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteRepository.Common.Utility.Tests", "Utility\CommonUtility\NoteRepository.Common.Utility.Tests\NoteRepository.Common.Utility.Tests.csproj", "{7798DE29-24A0-4444-A6B4-FB7D9FA3D354}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,11 +19,16 @@ Global
 		{195734FC-0ED0-463E-975C-6710AD5EAE01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{195734FC-0ED0-463E-975C-6710AD5EAE01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{195734FC-0ED0-463E-975C-6710AD5EAE01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7798DE29-24A0-4444-A6B4-FB7D9FA3D354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7798DE29-24A0-4444-A6B4-FB7D9FA3D354}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7798DE29-24A0-4444-A6B4-FB7D9FA3D354}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7798DE29-24A0-4444-A6B4-FB7D9FA3D354}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{195734FC-0ED0-463E-975C-6710AD5EAE01} = {D2FCB813-8BD3-4C7A-B4A9-C24158E0E6C7}
+		{195734FC-0ED0-463E-975C-6710AD5EAE01} = {3BD1469B-C151-43A3-9132-1712267AF1DC}
+		{7798DE29-24A0-4444-A6B4-FB7D9FA3D354} = {3BD1469B-C151-43A3-9132-1712267AF1DC}
 	EndGlobalSection
 EndGlobal

@@ -1,8 +1,8 @@
 ﻿using System;
-using Hadrian.Common.Utility.MeasureUnit;
+using NoteRepository.Common.Utility.MeasureUnit;
 using NUnit.Framework;
 
-namespace Hadrian.Common.Utility.Tests.MeasureUnitTests
+namespace NoteRepository.Common.Utility.Tests.MeasureUnitTests
 {
     [TestFixture]
     public class DimensionTests
