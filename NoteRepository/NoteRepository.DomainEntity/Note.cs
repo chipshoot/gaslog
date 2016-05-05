@@ -11,7 +11,7 @@ namespace NoteRepository.DomainEntity
 
         public virtual NoteCatalog Catalog { get; set; }
 
-        public virtual string Render { get; set; }
+        public virtual NoteRender Render { get; set; }
 
         public virtual User Author { get; set; }
 

@@ -11,7 +11,7 @@ namespace NoteRepository.Dal.NH.Mappings
             Map(x => x.Subject);
             Map(x => x.Content);
             References(x => x.Catalog);
-            Map(x => x.Render);
+            References(x => x.Render);
             References(x => x.Author);
             Map(x => x.CreateDate);
             Map(x => x.LastModifiedDate);

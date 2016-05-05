@@ -41,8 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutoMobile.cs" />
+    <Compile Include="ContactInfoCatalog.cs" />
+    <Compile Include="Email.cs" />
     <Compile Include="Note.cs" />
     <Compile Include="NoteCatalog.cs" />
+    <Compile Include="NoteRender.cs" />
+    <Compile Include="Phone.cs" />
+    <Compile Include="Tag.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

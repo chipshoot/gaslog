@@ -111,8 +111,13 @@
     <Compile Include="NH\Infrastructure\SessionMan\NhUnitOfWorkFactory.cs" />
     <Compile Include="NH\Infrastructure\SessionMan\SessionFactoryProvider.cs" />
     <Compile Include="NH\Infrastructure\VersionedClassMap.cs" />
+    <Compile Include="NH\Mappings\ContactInfoCatalogMap.cs" />
+    <Compile Include="NH\Mappings\EmailMap.cs" />
     <Compile Include="NH\Mappings\NoteCatalogMap.cs" />
     <Compile Include="NH\Mappings\NoteMap.cs" />
+    <Compile Include="NH\Mappings\NoteRenderMap.cs" />
+    <Compile Include="NH\Mappings\PhoneMap.cs" />
+    <Compile Include="NH\Mappings\TagMap.cs" />
     <Compile Include="NH\Mappings\UserMap.cs" />
     <Compile Include="NH\NhGenericTransaction.cs" />
     <Compile Include="NH\NhLookupRepository.cs" />
