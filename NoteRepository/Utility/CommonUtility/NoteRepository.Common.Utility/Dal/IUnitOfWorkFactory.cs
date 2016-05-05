@@ -10,29 +10,12 @@
         #region methods
 
         /// <summary>
-        /// Gets the current <see cref="IMultiSessionUnitOfWork"/> which
-        /// connect to multi database e.g. JDE and HPC
-        /// </summary>
-        /// <returns>The unique lookup unit of work for current domain entity</returns>
-        IMultiSessionUnitOfWork CurrentUnitOfWork { get; }
-
-        /// <summary>
         /// Gets the current <see cref="IUnitOfWork"/> which against HPC database.
         /// </summary>
         /// <value>
         /// The current HPC connected <see cref="IUnitOfWork"/>.
         /// </value>
-        IUnitOfWork CurrentHpcUnitOfWork { get; }
-
-        /// <summary>
-        /// Gets the current <see cref="IUnitOfWork" /> which against JDE database.
-        /// <remarks>
-        /// Currently system will not update JDE Database directly via database connection
-        /// so we can set the session to read-only to resolve the performance issue
-        /// </remarks>
-        /// </summary>
-        /// <value>The current JDE connected <see cref="IUnitOfWork" />.</value>
-        IUnitOfWork CurrentJdeUnitOfWork { get; }
+        IUnitOfWork CurrentUnitOfWork { get; }
 
         /// <summary>
         /// Binds the unit of work in certain context for MVC and WCF web services.

@@ -72,8 +72,6 @@
     <Compile Include="Dal\GuidIdEntity.cs" />
     <Compile Include="Dal\IGenericTransaction.cs" />
     <Compile Include="Dal\IGuidRepository.cs" />
-    <Compile Include="Dal\IMultiSessionUnitOfWork.cs" />
-    <Compile Include="Dal\IMultiSourceLookupRepository.cs" />
     <Compile Include="Dal\IStringIdRepository.cs" />
     <Compile Include="Dal\Pagination\IConverter.cs" />
     <Compile Include="Dal\Pagination\IPagedCollection.cs" />
