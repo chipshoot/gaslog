@@ -99,9 +99,9 @@
       <Project>{195734fc-0ed0-463e-975c-6710ad5eae01}</Project>
       <Name>NoteRepository.Common.Utility</Name>
     </ProjectReference>
-    <ProjectReference Include="..\NoteRepository.Dal\Hadrian.ProjectCenter.Dal.csproj">
+    <ProjectReference Include="..\NoteRepository.Dal\NoteRepository.Dal.csproj">
       <Project>{109ad51e-d4a2-476e-80a4-4c6976b0a873}</Project>
-      <Name>Hadrian.ProjectCenter.Dal</Name>
+      <Name>NoteRepository.Dal</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
