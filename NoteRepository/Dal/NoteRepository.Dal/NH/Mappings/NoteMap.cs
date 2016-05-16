@@ -10,9 +10,9 @@ namespace NoteRepository.Dal.NH.Mappings
             Table("Notes");
             Map(x => x.Subject);
             Map(x => x.Content);
-            References(x => x.Catalog);
-            References(x => x.Render);
-            References(x => x.Author);
+            References(x => x.Catalog).Column("Catalog");
+            References(x => x.Render).Column("Render");
+            References(x => x.Author).Column("Author");
             Map(x => x.CreateDate);
             Map(x => x.LastModifiedDate);
             Map(x => x.Description);
