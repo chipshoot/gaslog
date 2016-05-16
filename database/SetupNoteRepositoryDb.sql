@@ -111,7 +111,9 @@ GO
 /****** Object:  Table [dbo].[Phones]    Script Date: 05/02/2016 11:31:36 ******/
 CREATE TABLE [dbo].[Phones](
     [ID] [int] IDENTITY(1,1) NOT NULL,
+    [AreaCode] INT NULL,
     [Phone] NVARCHAR(1000) NOT NULL,
+    [Extension] INT NULL,
     [Owner] INT NOT NULL,
     [Country] NVARCHAR(3) NULL,
     [Catalog] INT NOT NULL,

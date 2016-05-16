@@ -142,7 +142,22 @@ namespace NoteRepository.Dal.NH
         /// <exception cref="UnitOfWorkException"></exception>
         public void Delete<T>(T entity) where T : class
         {
-            _session.Delete(entity);
+            using (var trans = BeginTransaction())
+            {
+                try
+                {
+                    _session.Delete(entity);
+                    trans.Commit();
+                }
+                catch (GenericADOException ex)
+                {
+                    trans.Rollback();
+                    trans.Dispose();
+                    _session.Clear();
+                    var errMsg = string.Format("An error occurred during the Add method.{1}{0}", ex.Message, Environment.NewLine);
+                    throw new UnitOfWorkException(errMsg, ex);
+                }
+            }
         }
 
         /// <summary>

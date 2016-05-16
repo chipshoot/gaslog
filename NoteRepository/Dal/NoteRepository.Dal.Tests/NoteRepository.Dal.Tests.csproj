@@ -74,6 +74,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MappingTests\PhoneMapTests.cs" />
+    <Compile Include="MappingTests\EmailMapTests.cs" />
     <Compile Include="MappingTests\UserMapTests.cs" />
     <Compile Include="NhGenericTransactionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

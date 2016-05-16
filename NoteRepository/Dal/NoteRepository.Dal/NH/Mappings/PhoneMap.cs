@@ -8,10 +8,12 @@ namespace NoteRepository.Dal.NH.Mappings
         public PhoneMap()
         {
             Table("Phones");
+            Map(x => x.AreaCode);
             Map(x => x.Number).Column("Phone");
-            References(x => x.Owner);
+            Map(x => x.Extension);
+            References(x => x.Owner).Column("Owner");
             Map(x => x.Country);
-            References(x => x.Catalog);
+            References(x => x.Catalog).Column("Catalog");
             Map(x => x.IsActivated);
             Map(x => x.Description);
         }

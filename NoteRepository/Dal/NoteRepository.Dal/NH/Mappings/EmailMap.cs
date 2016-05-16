@@ -9,9 +9,9 @@ namespace NoteRepository.Dal.NH.Mappings
         {
             Table("Emails");
             Map(x => x.Address).Column("Email");
-            References(x => x.Owner);
+            References(x => x.Owner).Column("Owner");
             Map(x => x.IsPrimary);
-            References(x => x.Catalog);
+            References(x => x.Catalog).Column("Catalog");
             Map(x => x.IsActivated);
             Map(x => x.Description);
         }

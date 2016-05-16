@@ -1,4 +1,5 @@
-﻿using NoteRepository.Common.Utility.Dal;
+﻿using System;
+using NoteRepository.Common.Utility.Dal;
 using NoteRepository.Dal.NH;
 using NoteRepository.DomainEntity;
 using NUnit.Framework;
@@ -70,6 +71,7 @@ namespace NoteRepository.Dal.Tests.MappingTests
                 FirstName = "Ying",
                 LastName = "Wang",
                 AccountName = "ywang",
+                BirthDay = new DateTime(1971,10,21),
                 Password = "1234",
                 Salt = "5678",
                 IsActivated = true,
@@ -77,7 +79,6 @@ namespace NoteRepository.Dal.Tests.MappingTests
 
             // Act
             _userRepository.Add(newUsr);
-            _userRepository.Flush();
 
             // Assert
             var srcUsr = _userRepository.FindEntities().FirstOrDefault(u => u.AccountName == "ywang");
@@ -87,7 +88,6 @@ namespace NoteRepository.Dal.Tests.MappingTests
 
             // Tear down changes
             _userRepository.Delete(newUsr);
-            _userRepository.Flush();
         }
 
         [Test]
@@ -100,12 +100,12 @@ namespace NoteRepository.Dal.Tests.MappingTests
                 LastName = "Wang",
                 AccountName = "ywang",
                 Password = "1234",
+                BirthDay = DateTime.Now,
                 Salt = "5678",
                 IsActivated = true,
             };
 
             _userRepository.Add(newUsr);
-            _userRepository.Flush();
 
             var srcUsr = _userRepository.FindEntities().FirstOrDefault(u => u.AccountName == "ywang");
             Assert.NotNull(srcUsr);
@@ -114,7 +114,6 @@ namespace NoteRepository.Dal.Tests.MappingTests
 
             // act
             _userRepository.Delete(newUsr);
-            _userRepository.Flush();
 
             // assert
             srcUsr = _userRepository.FindEntities().FirstOrDefault(u => u.AccountName == "ywang");
