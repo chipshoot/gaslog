@@ -30,7 +30,7 @@ namespace NoteRepository.Dal.Tests.MappingTests
         #region tests
 
         [Test]
-        public void Can_Get_User_WithValid_FirstName()
+        public void Can_Get_User_With_Valid_FirstName()
         {
             // Act
             var user = _userRepository.FindEntities().FirstOrDefault(c => c.FirstName == "Jack");
@@ -43,7 +43,7 @@ namespace NoteRepository.Dal.Tests.MappingTests
         }
 
         [Test]
-        public void Get_User_WithInvalidFirstName_NullReturned()
+        public void Get_User_With_InvalidFirst_Name_Null_Returned()
         {
             // Act
             var user = _userRepository.FindEntities().FirstOrDefault(c => c.FirstName == null);
@@ -53,7 +53,7 @@ namespace NoteRepository.Dal.Tests.MappingTests
         }
 
         [Test]
-        public void Get_User_WithNoExistedFirstName_NullRetured()
+        public void Get_User_With_NoExisted_FirstName_Null_Retured()
         {
             // Act
             var user = _userRepository.FindEntities().FirstOrDefault(c => c.FirstName == "123456");

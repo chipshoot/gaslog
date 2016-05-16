@@ -31,7 +31,7 @@ namespace NoteRepository.Dal.Tests.MappingTests
         #region tests
 
         [Test]
-        public void Can_Get_Email_WithValid_Id()
+        public void Can_Get_Email_With_Valid_Id()
         {
             // Act
             var email = _emailRepository.FindEntities().FirstOrDefault(c => c.Id == 2);
@@ -45,7 +45,7 @@ namespace NoteRepository.Dal.Tests.MappingTests
         }
 
         [Test]
-        public void Get_Email_WithInvalid_Id_NullReturned()
+        public void Get_Email_With_Invalid_Id_Null_Returned()
         {
             // Act
             var email = _emailRepository.FindEntities().FirstOrDefault(c => c.Id == 0);
@@ -55,7 +55,7 @@ namespace NoteRepository.Dal.Tests.MappingTests
         }
 
         [Test]
-        public void Get_Email_WithNoExisted_Id_NullRetured()
+        public void Get_Email_With_No_Existed_Id_Null_Retured()
         {
             // Act
             var email = _emailRepository.FindEntities().FirstOrDefault(c => c.Id == 9898);

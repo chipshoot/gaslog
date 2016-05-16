@@ -31,7 +31,7 @@ namespace NoteRepository.Dal.Tests.MappingTests
         #region tests
 
         [Test]
-        public void Can_Get_Phone_WithValid_Id()
+        public void Can_Get_Phone_With_Valid_Id()
         {
             // Act
             var phone = _phoneRepository.FindEntities().FirstOrDefault(c => c.Id == 1);
@@ -47,7 +47,7 @@ namespace NoteRepository.Dal.Tests.MappingTests
         }
 
         [Test]
-        public void Get_Phone_WithInvalid_Id_NullReturned()
+        public void Get_Phone_With_Invalid_Id_Null_Returned()
         {
             // Act
             var phone = _phoneRepository.FindEntities().FirstOrDefault(c => c.Id == 0);
@@ -57,7 +57,7 @@ namespace NoteRepository.Dal.Tests.MappingTests
         }
 
         [Test]
-        public void Get_Phone_WithNoExisted_Id_NullRetured()
+        public void Get_Phone_WithNoExisted_Id_Null_Retured()
         {
             // Act
             var phone = _phoneRepository.FindEntities().FirstOrDefault(c => c.Id == 9898);

@@ -7,6 +7,7 @@ namespace NoteRepository.Dal.NH.Mappings
     {
         public NoteRenderMap()
         {
+            Table("NoteRenders");
             Map(x => x.Name);
             Map(x => x.NameSpace);
             Map(x => x.Description);
