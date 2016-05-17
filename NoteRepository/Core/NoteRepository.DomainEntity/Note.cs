@@ -1,7 +1,7 @@
 ﻿using NoteRepository.Common.Utility.Dal;
 using System;
 
-namespace NoteRepository.DomainEntity
+namespace NoteRepository.Core.DomainEntity
 {
     public class Note : VersionedEntity
     {

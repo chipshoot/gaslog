@@ -130,7 +130,7 @@
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\NoteRepository.DomainEntity\NoteRepository.DomainEntity.csproj">
+    <ProjectReference Include="..\..\Core\NoteRepository.DomainEntity\NoteRepository.DomainEntity.csproj">
       <Project>{58be983a-050e-456a-905a-5a3a163b7bc4}</Project>
       <Name>NoteRepository.DomainEntity</Name>
     </ProjectReference>

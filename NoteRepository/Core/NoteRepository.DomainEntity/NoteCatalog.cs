@@ -1,8 +1,8 @@
 ﻿using NoteRepository.Common.Utility.Dal;
 
-namespace NoteRepository.DomainEntity
+namespace NoteRepository.Core.DomainEntity
 {
-    public class ContactInfoCatalog : Entity
+    public class NoteCatalog : Entity
     {
         public virtual string Name { get; set; }
 

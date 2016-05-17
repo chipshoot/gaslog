@@ -1,12 +1,12 @@
 ﻿using NoteRepository.Common.Utility.Dal;
 
-namespace NoteRepository.DomainEntity
+namespace NoteRepository.Core.DomainEntity
 {
-    public class NoteRender : Entity
+    public class AutoMobile : Entity
     {
         public virtual string Name { get; set; }
 
-        public virtual string NameSpace { get; set; }
+        public virtual string SeriesNumber { get; set; }
 
         public virtual string Description { get; set; }
     }

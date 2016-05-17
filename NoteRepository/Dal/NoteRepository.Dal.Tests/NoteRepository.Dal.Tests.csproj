@@ -97,8 +97,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\NoteRepository.DomainEntity\NoteRepository.DomainEntity.csproj">
-      <Project>{58BE983A-050E-456A-905A-5A3A163B7BC4}</Project>
+    <ProjectReference Include="..\..\Core\NoteRepository.DomainEntity\NoteRepository.DomainEntity.csproj">
+      <Project>{58be983a-050e-456a-905a-5a3a163b7bc4}</Project>
       <Name>NoteRepository.DomainEntity</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Utility\CommonUtility\NoteRepository.Common.Utility\NoteRepository.Common.Utility.csproj">

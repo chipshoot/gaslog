@@ -1,6 +1,6 @@
 ﻿using NoteRepository.Common.Utility.Dal;
 
-namespace NoteRepository.DomainEntity
+namespace NoteRepository.Core.DomainEntity
 {
     public class Phone : Entity
     {

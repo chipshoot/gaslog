@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{58BE983A-050E-456A-905A-5A3A163B7BC4}</ProjectGuid>
+    <ProjectGuid>{5D73F0BC-E695-4BDD-B4C5-F952E9150743}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NoteRepository.DomainEntity</RootNamespace>
-    <AssemblyName>NoteRepository.DomainEntity</AssemblyName>
+    <RootNamespace>NoteRepository.Manager.Tests</RootNamespace>
+    <AssemblyName>NoteRepository.Manager.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -31,6 +31,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Moq, Version=4.0.10827.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Moq.Contrib.0.3\lib\Moq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Moq.Contrib, Version=0.1.3802.36788, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Moq.Contrib.0.3\lib\Moq.Contrib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.2.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NUnit.3.2.1\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,21 +53,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AutoMobile.cs" />
-    <Compile Include="ContactInfoCatalog.cs" />
-    <Compile Include="Email.cs" />
-    <Compile Include="Note.cs" />
-    <Compile Include="NoteCatalog.cs" />
-    <Compile Include="NoteRender.cs" />
-    <Compile Include="Phone.cs" />
-    <Compile Include="Tag.cs" />
-    <Compile Include="User.cs" />
+    <Compile Include="NoteManager.Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Utility\CommonUtility\NoteRepository.Common.Utility\NoteRepository.Common.Utility.csproj">
-      <Project>{195734FC-0ED0-463E-975C-6710AD5EAE01}</Project>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Utility\CommonUtility\NoteRepository.Common.Utility\NoteRepository.Common.Utility.csproj">
+      <Project>{195734fc-0ed0-463e-975c-6710ad5eae01}</Project>
       <Name>NoteRepository.Common.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NoteRepository.DomainEntity\NoteRepository.DomainEntity.csproj">
+      <Project>{58be983a-050e-456a-905a-5a3a163b7bc4}</Project>
+      <Name>NoteRepository.DomainEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NoteRepository.Manager.Contract\NoteRepository.Manager.Contract.csproj">
+      <Project>{E5B4A95E-17FF-46A0-98F1-D82777CFA868}</Project>
+      <Name>NoteRepository.Manager.Contract</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

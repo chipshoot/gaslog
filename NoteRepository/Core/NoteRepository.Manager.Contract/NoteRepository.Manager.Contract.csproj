@@ -7,10 +7,11 @@
     <ProjectGuid>{E5B4A95E-17FF-46A0-98F1-D82777CFA868}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NoteRepository.Manager.Contract</RootNamespace>
+    <RootNamespace>NoteRepository.Core.Manager.Contract</RootNamespace>
     <AssemblyName>NoteRepository.Manager.Contract</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,7 +41,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NoteManager\INoteManager.cs" />
+    <Compile Include="NoteRender\INoteRender.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\NoteRepository.DomainEntity\NoteRepository.DomainEntity.csproj">
+      <Project>{58be983a-050e-456a-905a-5a3a163b7bc4}</Project>
+      <Name>NoteRepository.DomainEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utility\CommonUtility\NoteRepository.Common.Utility\NoteRepository.Common.Utility.csproj">
+      <Project>{195734fc-0ed0-463e-975c-6710ad5eae01}</Project>
+      <Name>NoteRepository.Common.Utility</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

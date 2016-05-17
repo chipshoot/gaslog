@@ -2,7 +2,7 @@
 using System.Linq;
 using NoteRepository.Common.Utility.Dal;
 using NoteRepository.Dal.NH;
-using NoteRepository.DomainEntity;
+using NoteRepository.Core.DomainEntity;
 using NUnit.Framework;
 
 namespace NoteRepository.Dal.Tests.MappingTests

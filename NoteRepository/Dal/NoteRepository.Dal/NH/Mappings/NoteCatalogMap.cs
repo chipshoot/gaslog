@@ -1,5 +1,5 @@
 ﻿using NoteRepository.Dal.NH.Infrastructure;
-using NoteRepository.DomainEntity;
+using NoteRepository.Core.DomainEntity;
 
 namespace NoteRepository.Dal.NH.Mappings
 {
