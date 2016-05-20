@@ -61,6 +61,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Dal\NoteRepository.Dal.Tests\NoteRepository.Dal.Tests.csproj">
+      <Project>{9c8d256a-1972-4c93-9c24-0e6f96eb6276}</Project>
+      <Name>NoteRepository.Dal.Tests</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Utility\CommonTestHelper\NoteRepository.Common.TestHelper.csproj">
+      <Project>{5A68D934-5FD6-4F53-B760-459FB00E17B0}</Project>
+      <Name>NoteRepository.Common.TestHelper</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Utility\CommonUtility\NoteRepository.Common.Utility\NoteRepository.Common.Utility.csproj">
       <Project>{195734fc-0ed0-463e-975c-6710ad5eae01}</Project>
       <Name>NoteRepository.Common.Utility</Name>
@@ -72,6 +80,10 @@
     <ProjectReference Include="..\NoteRepository.Manager.Contract\NoteRepository.Manager.Contract.csproj">
       <Project>{E5B4A95E-17FF-46A0-98F1-D82777CFA868}</Project>
       <Name>NoteRepository.Manager.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NoteRepository.Manager\NoteRepository.Manager.csproj">
+      <Project>{F8EA13E9-50C3-4E0D-840C-E9D365D68E6C}</Project>
+      <Name>NoteRepository.Manager</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

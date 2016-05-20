@@ -8,31 +8,6 @@ namespace NoteRepository.Common.TestHelper
 {
     public static class TestHelper
     {
-        // const for lead time testing
-        public const int QuickUsa = 2;
-
-        public const int QuickCanada = 3;
-
-        public const int StockUsa = 5;
-
-        public const int Week25 = 7;
-
-        public const int Week30 = 12;
-
-        public const int Week35 = 14;
-
-        // Assembled lep days
-        public const int Week355 = 19;
-
-        public const int Week45 = 21;
-
-        // Assembled standard days
-        public const int Week455 = 26;
-
-        public const int Week65 = 35;
-
-        public const int Week75 = 42;
-
         public static object DeepCopy(object src)
         {
             const BindingFlags flags = BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic;
@@ -51,7 +26,7 @@ namespace NoteRepository.Common.TestHelper
             if (type.IsArray)
             {
                 var typeName = type.FullName.Replace("[]", string.Empty);
-                var fullName = string.Format("{0},{1}", typeName, type.Assembly.FullName);
+                var fullName = $"{typeName},{type.Assembly.FullName}";
                 var elementType = Type.GetType(fullName);
                 var array = src as Array;
                 var copied = Array.CreateInstance(elementType, array.Length);

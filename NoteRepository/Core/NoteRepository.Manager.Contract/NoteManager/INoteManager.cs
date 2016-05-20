@@ -4,6 +4,8 @@ namespace NoteRepository.Core.Manager.Contract.NoteManager
 {
     public interface INoteManager
     {
+        string ErrorMessage { get; }
+
         Note GetNoteById(int id);
 
         Note CreateNewNote(Note note);
